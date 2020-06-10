@@ -13,7 +13,7 @@
 
 {% block content %}
   {% include "partials/page-header.html" %}
-  <form action="/savepoint" method="POST">
+  <form action="/savepoint" method="POST" autocomplete="off">
     <h1>Cadastro do ponto de coleta</h1>
 
     <fieldset>
@@ -36,7 +36,7 @@
           <input type="text" name="address" required="required">
         </div>
         <div class="field">
-          <label for="address2">Número/CComplemento</label>
+          <label for="address2">Número/Complemento</label>
           <input type="text" name="address2" required="required">
         </div>
       </div>
@@ -79,11 +79,11 @@
         </li>
         <li data-id="Residuoes eletrônicos">
           <img src="/assets/icones/eletronicos.svg" alt="Residuoes eletrônicos">
-          <span>Residuoes eletrônicos</span>
+          <span>Residuos eletrônicos</span>
         </li>
         <li data-id="Residuoes orgânicos">
           <img src="/assets/icones/organicos.svg" alt="Residuoes orgânicos">
-          <span>Residuoes orgânicos</span>
+          <span>Residuos orgânicos</span>
         </li>
         <li data-id="Óleo de cozinha">
           <img src="/assets/icones/oleo.svg" alt="Óleo de cozinha">
